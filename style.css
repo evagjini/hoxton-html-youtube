@@ -20,10 +20,10 @@ header{
     background-color:white;
     height: 60px;
     grid-area: header;
+    grid-template-columns: auto 1fr auto;
     grid-auto-flow: column;
     display: grid;
     align-items: center;
-    justify-content: start;
 }
 
 .left-menu{
@@ -49,9 +49,10 @@ main{
 .header-main-menu{
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 300px auto;
+    grid-template-columns: auto auto ;
     gap: 10px;
     align-items: center;
+    padding: 0.5rem;
 }
 
 .header-search-bar input{
@@ -79,12 +80,13 @@ main{
     border: 1px solid gray;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px ;
-    margin-right: 50px;
+    margin-right: 100px;
 }
  
 
 .header-mic{
-    padding-left: 110px;
+    justify-content:center;
+    padding-left: 80px;
 }
 .header-right{
     display: grid;
@@ -92,12 +94,10 @@ main{
     align-items: center;
     gap: 10px;
     justify-content:end;
-    padding-left: 70px;
+    padding-left: 200px;
 }
 .sign-in-button{
-    border: 1px solid royalblue;
-    padding: 20px;
-   height: 50px;
-   color: royalblue;
+   color:  royalblue;
+   align-content: center;
    justify-content: center;
 } 
