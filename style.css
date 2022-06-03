@@ -24,15 +24,8 @@ header{
     grid-auto-flow: column;
     display: grid;
     align-items: center;
-}
-
-
-main{
-    background-color:#f9f9f9;
-    grid-area: main;
 
 }
-
 .header-left{
     display: grid;
     grid-auto-flow: column;
@@ -41,15 +34,7 @@ main{
     gap: 20px;
     padding-left: 10px;
     
-}    
-.header-main-menu{
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: auto auto ;
-    gap: 10px;
-    align-items: center;
-    padding: 0.5rem;
-}
+} 
 
 .header-search-bar input{
     width: 100%;
@@ -61,6 +46,7 @@ main{
     margin-left: 50px;
 
 }
+
 .header-search-bar{
     display: grid;
     grid-auto-flow: column;
@@ -142,16 +128,55 @@ main{
     align-content: center;
     padding: 0.5rem 1rem ;
 }
+main{
+    background-color:#f9f9f9;
+    grid-area: main;
+
+    
+    
+}
 .header-main{
     display: grid;
-    height: 100px;
-    background-color:rgb(163, 77, 77);
+    grid-auto-flow: column;
+    gap: 15px;
+    padding: 6px;
+    background-color: white;
+    border-top: 1px solid #f0f0f0;
+    height: 50px;
+    justify-content: center;
+
 }
+.header-main button{
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid gray;
+    padding: 7px 10px;
+    
+
+}
+.header-main button:hover{
+    background-color: #dad6d6;
+}
+.header-main button:focus{
+    color: white;
+    background-color: black;
+}
+   
+.header-main-menu{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
 .videos-section{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 5px;
-    padding: 5px;
+    padding: 15px;
     
 }
 .youtube-video{
