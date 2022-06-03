@@ -27,8 +27,6 @@ header{
 }
 
 
-
-
 main{
     background-color:#f9f9f9;
     grid-area: main;
@@ -205,3 +203,17 @@ main{
     gap: 1rem;
     font-size: 15px;
 }
+
+    .left-menu-item-text{
+        display: block;
+
+    }
+
+    @media (max-width: 640px){
+        .left-menu-item-text{
+            display: none;
+        }
+        .left-menu-item{
+            width: max-content;
+        }
+    }
