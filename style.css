@@ -26,10 +26,8 @@ header{
     align-items: center;
 }
 
-.left-menu{
-    background-color: red;
-    grid-area: left-menu;
-}
+
+
 
 main{
     background-color: yellowgreen;
@@ -98,6 +96,48 @@ main{
 }
 .sign-in-button{
    color:  royalblue;
-   align-content: center;
-   justify-content: center;
+   align-items: center;
+   /* align-content: center; */
+   /* justify-content: center; */
+   border: 1px solid royalblue;
 } 
+.left-menu{
+    display: grid;
+    grid-area: left-menu;
+}
+.left-menu-nav{
+    padding: 0.5rem 0rem;
+
+}
+.left-menu-items{
+    list-style: none;
+    padding-right: 1rem;
+    display: grid;
+    gap: 0.3rem;
+}
+.left-menu-item-link{
+    text-decoration: initial;
+    color: black;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0.2rem 1rem;
+
+}
+.left-menu-item-link.home{
+    border: 1px solid rgb(246, 238, 238);
+    background-color: rgb(235, 228, 228);
+
+}
+.paragraph{
+    align-items: center;
+    padding: 0rem 1.5rem ;
+}
+.best-of-youtube{
+    color: gray;
+    align-content: center;
+    padding: 0.5rem 1rem ;
+}
+
+
