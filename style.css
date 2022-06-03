@@ -97,8 +97,9 @@ main{
 .sign-in-button{
    color:  royalblue;
    align-items: center;
+   /* width: 50px; */
    /* align-content: center; */
-   /* justify-content: center; */
+   justify-content: center;
    border: 1px solid royalblue;
 } 
 .left-menu{
@@ -189,7 +190,7 @@ main{
 }
 .youtube-video-text-tittle h3{
     
-    font-size: 18px;  
+    font-size: 15px;  
     line-height: 1.5;
 
 }
