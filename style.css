@@ -30,7 +30,7 @@ header{
 
 
 main{
-    background-color: yellowgreen;
+    background-color:#f9f9f9;
     grid-area: main;
 
 }
@@ -152,7 +152,51 @@ main{
     
 }
 .youtube-video{
-    border: 1px solid black;
-    height: 200px;
+    /* border: 1px solid black; */
+    height: 250px;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    transition: all 0.2s ;
+
+}
+.youtube-video:hover{
+    transform: scale(1.10);
 }
 
+.youtube-video-thumbnail-container{
+    overflow-y: hidden;
+}
+.youtube-video-thumbnail{
+    background: url(harry.webp);
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.youtube-video-text-content{
+    display: grid;
+    grid-template-columns: 50px 1fr 25px;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+.youtube-video-text-logo >img{
+    border-radius: 50%;
+    width: 40px;
+}
+.youtube-video-text-tittle{
+    display: grid;
+}
+.youtube-video-text-tittle h3{
+    
+    font-size: 18px;  
+    line-height: 1.5;
+
+}
+.youtube-video-text-tittle>a{
+    text-decoration: none;
+    color: gray;
+    justify-items: center;
+    gap: 1rem;
+    font-size: 15px;
+}
