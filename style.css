@@ -97,6 +97,10 @@ main{
 .sign-in-button{
    color:  royalblue;
    align-items: center;
+   font-size: 10px;
+   font-family: Roboto,Arial, sans-serif;
+   border-radius: 1px;
+
    /* width: 50px; */
    /* align-content: center; */
    justify-content: center;
